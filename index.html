@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black text-white flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="w-full bg-black text-white p-3 flex flex-col fixed top-0 left-0 z-50">
+        <div class="flex items-center justify-between">
+            <!-- Left: Logo & Menu -->
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+                <img src="public/assets/image/Y.logo.png" alt="YouTube Logo" class="h-14">
+            </div>
+            <!-- Center: Search Bar -->
+            <div class="hidden lg:flex items-center bg-gray-900 px-4 py-2 rounded-full w-1/2">
+                <input type="text" placeholder="Search" class="bg-transparent outline-none text-white w-full">
+                <button class="ml-2"><i class="fas fa-search text-gray-400"></i></button>
+                <button class="ml-2"><i class="fas fa-times text-gray-400"></i></button>
+            </div>
+            <!-- Right: Create & Profile -->
+            <div class="flex items-center space-x-4">
+                <button class="flex items-center space-x-1 bg-gray-800 px-4 py-2 rounded-full text-lg">
+                    <i class="fas fa-plus"></i><span>Create</span>
+                </button>
+                <button><i class="fas fa-bell text-2xl"></i></button>
+                <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center text-lg">A</div>
+            </div>
+        </div>
+        <!-- Category Section -->
+        <div class="w-full overflow-x-auto whitespace-nowrap py-2 px-4" dir="rtl">
+            <div class="flex space-x-2 px-4">
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Religion</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Arabic Music</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Mixes</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">New-Age Music</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Rotana</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Hours</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Lo-fi</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Albums</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Playlists</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Live</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Podcasts</button>
+                <button class="px-4 py-2 bg-gray-700 text-white rounded-full">Music</button>
+                <button class="px-4 py-2 bg-white text-black rounded-full">All</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Clone</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+    <body class="bg-black text-white flex">
+        <!-- Sidebar -->
+        <aside class="w-[250px] h-screen bg-black text-white fixed left-0 top-[80px] overflow-y-auto p-4">
+            <nav class="space-y-3">
+                <a href="#" class="flex items-center space-x-4 bg-gray-800 p-3 rounded-lg">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-lg">Home</span>
+                </a>
+                <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                    <i class="fas fa-bolt text-xl"></i>
+                    <span class="text-lg">Shorts</span>
+                </a>
+                <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                    <i class="fas fa-tv text-xl"></i>
+                    <span class="text-lg">Subscriptions</span>
+                </a>
+            </nav>
+        </aside>
+    
+        <div class="flex flex-col flex-grow ml-[250px]">
+            <!-- Header -->
+            <header class="w-full bg-black text-white p-3 flex flex-col fixed top-0 left-0 z-50">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+                        <img src="public/assets/image/Y.logo.png" alt="YouTube Logo" class="h-14">
+                    </div>
+                    <div class="hidden lg:flex items-center bg-gray-900 px-4 py-2 rounded-full w-1/2">
+                        <input type="text" placeholder="Search" class="bg-transparent outline-none text-white w-full">
+                        <button class="ml-2"><i class="fas fa-search text-gray-400"></i></button>
+                        <button class="ml-2"><i class="fas fa-times text-gray-400"></i></button>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="flex items-center space-x-1 bg-gray-800 px-4 py-2 rounded-full text-lg">
+                            <i class="fas fa-plus"></i><span>Create</span>
+                        </button>
+                        <button><i class="fas fa-bell text-2xl"></i></button>
+                        <div class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center text-lg">A</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="grid grid-cols-1 md:grid-cols-3 gap-4 flex-grow mt-[140px] p-6">
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/Thumbnail 1.png" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">جثة فتاة في شقة | بودكاست جناية</p>
+                    <p class="text-xs text-gray-400">1:26:29</p>
+                </div>
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/swiftui.png" alt="Thumbnail 5" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">Creating Shapes in SwiftUI | Bootcamp #3</p>
+                    <p class="text-xs text-gray-400"></p>
+                </div>
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/speak.png" alt="Thumbnail 6" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">English Podcast: Understand English But Can’t Speak? 🗣️ Tips to Start Speaking Confidently!</p>
+                    <p class="text-xs text-gray-400">26:29</p>
+                </div>
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/saudi.png" alt="Thumbnail 4" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">النجاة من الموت: غرق عبّارة السلام | بودكاست فنجان</p>
+                    <p class="text-xs text-gray-400">1:26:29</p>
+                </div>
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/student.png" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">2-HOUR STUDY WITH ME | Calm Piano ️🎹 Rain sound🌧️ | Pomodoro 50/10 | Rainy Day - Spring 2024 🌸</p>
+                    <p class="text-xs text-gray-400">1:02:30</p>
+                </div>
+                <div class="w-full bg-gray-800 p-2 rounded-lg cursor-pointer">
+                    <img src="public/assets/image/morning.png" alt="Thumbnail 9" class="w-full h-[200px] object-cover rounded-md">
+                    <p class="text-sm mt-2 font-bold">Morning Vibes Playlist ☕ Feel Good Music</p>
+                    <p class="text-xs text-gray-400">38:20</p>
+                </div>
+            </main>
+
+ <!-- Sidebar -->
+    <aside class="w-[250px] h-screen bg-black text-white fixed left-0 top-[120px] overflow-y-auto p-4">
+        <nav class="space-y-3">
+            <a href="#" class="flex items-center space-x-4 bg-gray-800 p-3 rounded-lg">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-lg">Home</span>
+            </a>
+            <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                <i class="fas fa-bolt text-xl"></i>
+                <span class="text-lg">Shorts</span>
+            </a>
+            <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                <i class="fas fa-tv text-xl"></i>
+                <span class="text-lg">Subscriptions</span>
+            </a>
+
+            <hr class="my-4 border-gray-700">
+            <h2 class="text-gray-400 text-sm mb-2">You</h2>
+            <a href="#" class="flex items-center space-x-3 p-2 hover:bg-gray-800 rounded-lg">
+                <i class="fas fa-history text-xl"></i>
+                <span>History</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 p-2 hover:bg-gray-800 rounded-lg">
+                <i class="fas fa-list text-xl"></i>
+                <span>Playlists</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 p-2 hover:bg-gray-800 rounded-lg">
+                <i class="fas fa-video text-xl"></i>
+                <span>Your videos</span>
+            </a>
+<hr class="my-4 border-gray-700">
+
+        <!-- Subscriptions Section -->
+        <div>
+            <h2 class="text-gray-400 text-lg mb-3">Subscriptions</h2>
+            <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                <img src="public/assets/image/mbc.jpg" class="w-8 h-8 rounded-full" alt="MBC1">
+                <span class="text-md">MBC1</span>
+            </a>
+            <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                <img src="public/assets/image/swiftful.jpeg" class="w-8 h-8 rounded-full" alt="Swiftful Thinking">
+                <span class="text-md">Swiftful Thinking</span>
+            </a>
+            <a href="#" class="flex items-center space-x-4 p-3 hover:bg-gray-800 rounded-lg">
+                <img src="public/assets/image/mics.jpeg" class="w-8 h-8 rounded-full" alt="Swiftful Thinking">
+                <span class="text-md">Mics | مايكس</span>
+            </a>
+        </nav>
+    </aside>
+
+</body>
+
+</html>
